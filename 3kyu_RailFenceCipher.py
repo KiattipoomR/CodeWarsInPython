@@ -20,7 +20,7 @@ def decode_rail_fence_cipher(string, n):
         result.append(string[size:size+rail])
         size += rail
     
-    lane, direction, idx = 0, 1, 0
+    lane, direction = 0, 1
     output = ""
     while len(output) < len(string):
         output += result[lane][0]
